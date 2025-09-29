@@ -145,7 +145,7 @@ Transform:
   m_GameObject: {fileID: 66448322}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.028907351, w: 0.9995821}
-  m_LocalPosition: {x: 0, y: -0.49800128, z: 0}
+  m_LocalPosition: {x: 0, y: -0.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -584,7 +584,7 @@ Transform:
   m_GameObject: {fileID: 805262206}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.028907351, w: 0.9995821}
-  m_LocalPosition: {x: -0.212, y: 0.109, z: 0}
+  m_LocalPosition: {x: -0.212, y: 0.07700041, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -660,6 +660,7 @@ GameObject:
   - component: {fileID: 1627142855}
   - component: {fileID: 1627142860}
   - component: {fileID: 1627142859}
+  - component: {fileID: 1627142861}
   m_Layer: 0
   m_Name: Barry
   m_TagString: Untagged
@@ -679,9 +680,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 10
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -784,6 +785,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.99}
   m_Size: {x: 2.75, y: 0.21}
   m_Direction: 1
+--- !u!114 &1627142861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627142854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e315b64ee0851479180f10d0a297d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  torqueAmount: 10
 --- !u!1 &2099096106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1931,10 +1945,10 @@ SurfaceEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Speed: 10
+  m_Speed: 12
   m_SpeedVariation: 0
   m_ForceScale: 0.1
-  m_UseContactForce: 0
+  m_UseContactForce: 1
   m_UseFriction: 0
   m_UseBounce: 1
 --- !u!1660057539 &9223372036854775807
